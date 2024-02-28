@@ -1,16 +1,67 @@
 @import '@/assets/scss/variables/media';
 @import '@/assets/scss/variables/classes';
+@import '@/assets/scss/variables/colors';
 
 #{$header} {
-
-
-  @media (max-width: #{$mediaMD}) {
-    #{$header} {
+  display: flex;
+  padding: 30px 30px 20px;
+  flex-direction: column;
+  background-color: $secondary;
+  row-gap: 20px;
+  
+  &__banner {
+    flex: 0 0 100%;
+  }
+  
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  &__logo {
+    width: 107px;
+    margin-top: 8px;
+  }
+  
+  &__title {
+    max-width: 73%;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3;
+    color: $white;
+    
+    span {
+      color: $primary;
     }
   }
+}
 
-  @media (max-width: #{$mediaSM}) {
-    #{$header} {
+@media (max-width: #{$mediaMD}) {
+  #{$header} {
+  }
+}
+
+@media (max-width: #{$mediaSM}) {
+  #{$header} {
+    padding: 8px 8px 18px;
+    row-gap: 11px;
+    
+    &__wrapper {
+      padding-left: 2px;
+      flex-direction: column;
+      row-gap: 16px;
+    }
+    
+    &__title {
+      max-width: 245px;
+      font-size: 24px;
+    }
+    
+    &__logo {
+      width: 78px;
+      margin-top: 0;
     }
   }
 }
