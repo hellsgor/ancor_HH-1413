@@ -8,6 +8,22 @@
   padding-right: $content-block-padding-right;
   padding-bottom: $content-block-padding-bottom;
   padding-left: $content-block-padding-left;
+  
+  ul {
+    list-style: none;
+    
+    li {
+      position: relative;
+      padding-left: 35px;
+      
+      &::before {
+        position: absolute;
+        top: -1px;
+        left: 10px;
+        content: '—';
+      }
+    }
+  }
 }
 
 @media (max-width: #{$mediaMD}) {

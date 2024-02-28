@@ -2,36 +2,36 @@
 
 // content-block
 // desktop
-$content-block-padding-top: 24px;
-$content-block-padding-right: 24px;
-$content-block-padding-bottom: 24px;
-$content-block-padding-left: 24px;
+$content-block-padding-top: 40px;
+$content-block-padding-right: 30px;
+$content-block-padding-bottom: 40px;
+$content-block-padding-left: 30px;
 // mobile
-$content-block-padding-top-mobile: 24px;
-$content-block-padding-right-mobile: 24px;
-$content-block-padding-bottom-mobile: 24px;
-$content-block-padding-left-mobile: 24px;
+$content-block-padding-top-mobile: 30px;
+$content-block-padding-right-mobile: 10px;
+$content-block-padding-bottom-mobile: 30px;
+$content-block-padding-left-mobile: 10px;
 
 // font properties
 $text-color: $black;
 // desktop
-$text-indent-top: 16px;
-$text-font-size: 16px;
-$text-line-height: 1.4;
+$text-indent-top: 8px;
+$text-font-size: 14px;
+$text-line-height: 1.429;
 $text-font-weight: 400;
 // mobile
-$text-indent-top-mobile: 16px;
-$text-font-size-mobile: 12px;
+$text-indent-top-mobile: 8px;
+$text-font-size-mobile: 14px;
 
 // headings
 $headings-color: $black;
 // desktop
-$headings-font-size: 20px;
+$headings-font-size: 18px;
 $headings-font-weight: 700;
-$headings-line-height: 1.2;
-$heading-top-indent: 14px;
-$heading-bottom-indent: 14px;
+$headings-line-height: 1.4;
+$heading-top-indent: 30px;
+$heading-bottom-indent: 16px;
 // mobile
 $headings-font-size-mobile: 18px;
-$heading-top-indent-mobile: 14px;
-$heading-bottom-indent-mobile: 14px;
+$heading-top-indent-mobile: 30px;
+$heading-bottom-indent-mobile: 16px;
