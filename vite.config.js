@@ -5,6 +5,12 @@ import {resolve} from 'path'
 import path from 'node:path';
 import glob from "glob";
 import {ViteImageOptimizer} from 'vite-plugin-image-optimizer';
+import {store} from "./store.js";
+
+
+const pageData = {
+  '/index.html': store,
+};
 
 export default defineConfig({
   target: ['es2015'],
@@ -24,6 +30,9 @@ export default defineConfig({
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, 'src/components'),
+      context(pagePath) {
+        return pageData[pagePath];
+      },
     }),
     ViteImageOptimizer({
       png: {
